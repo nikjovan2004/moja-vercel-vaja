@@ -3,15 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vercel vaja</title>
+  <title>Moja Vercel vaja</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Moja prva aplikacija na Vercelu</h1>
-    <p id="opis">To je enostavna vaja za deploy spletne aplikacije.</p>
-    <button id="btn">Klikni me</button>
-  </div>
+  <main class="page">
+    <section class="card">
+      <p class="badge">UOS vaja</p>
+      <h1>Moja prva aplikacija na Vercelu</h1>
+      <p id="opis" class="opis">
+        To je nadgrajena statična spletna aplikacija za deploy na GitHub in Vercel.
+      </p>
+
+      <div class="clock-box">
+        <p class="section-label">Trenutni čas</p>
+        <div id="clock" class="clock">00:00:00</div>
+      </div>
+
+      <div class="actions">
+        <button id="btn">Klikni me</button>
+      </div>
+
+      <p id="status" class="status">Gumb še ni bil kliknjen.</p>
+
+      <form id="contactForm" class="form">
+        <h2>Preprost obrazec</h2>
+        <label for="ime">Ime</label>
+        <input type="text" id="ime" name="ime" placeholder="Vpiši svoje ime">
+
+        <label for="sporocilo">Sporočilo</label>
+        <textarea id="sporocilo" name="sporocilo" rows="4" placeholder="Vpiši kratko sporočilo"></textarea>
+
+        <button type="submit" class="secondary-btn">Pošlji</button>
+      </form>
+
+      <p id="formMessage" class="form-message"></p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
